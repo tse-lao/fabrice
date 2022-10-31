@@ -6,10 +6,10 @@
         </div>
         
         <div class="menu">
-            <div class="menu-item" @click="$router.push('./')"> Kunst</div>
-            <div class="menu-item" @click="$router.push('./about')"> Over Fabrice</div>
-            <div class="menu-item" @click="$router.push('./publicaties')"> Publicaties</div>
-            <div class="menu-item" @click="$router.push('./sell')"> Verkoop</div>
+            <div class="menu-item" @click="$router.push('/')"> Kunst</div>
+            <div class="menu-item" @click="$router.push('/about')"> Over Fabrice</div>
+            <div class="menu-item" @click="$router.push('publicaties')"> Publicaties</div>
+            <div class="menu-item" @click="$router.push('/selling')"> Verkoop</div>
         </div>
       </div>
   </main>

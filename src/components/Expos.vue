@@ -1,33 +1,35 @@
 <template>
+<main class="timeline">
     <main>
         <div class="background-image">
             <img src="../assets/photos/fabrice-in-gallery.jpeg" />
         </div>
-        <div class="publication"  v-for="(item, key) in publicaties" :key="key">
+        <div class="publication"  v-for="(item, key) in projects" :key="key">
             <div class="item">
                 
                 <h4>{{item.title}}</h4>
                 
                 <span class="date">{{item.date}}</span>
-                <span class="publisher"> -  {{item.publication}}</span>
+                <span class="publisher"> -  {{item.location}}</span>
             </div>
         </div>
     </main>
+</main>
+ 
 </template>
-<script lang="js">
-import json from '../data/publicaties.json';
-export default{
-    name: "PublicityWork", 
-    
 
+<script>
+import json from '../data/timeline.json';
+export default {
     data: () => {
         return{
-            publicaties: json
+            projects: json
         }
     }
     
 }
 </script>
+
 <style lang="scss">
 .publication{
     display: flex;
@@ -40,16 +42,5 @@ export default{
         padding: 0;
     }
 }
-.background-image{
-    position: fixed;
-    left: 0px;
-    opacity: 0.3;
-    top: 0;
-    
-    z-index: -10000;
-    img{
-        height: 50vw;
-        border-radius: 0px 0px 3000px 300px;
-    }
-}
+
 </style>

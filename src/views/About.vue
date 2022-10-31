@@ -1,5 +1,9 @@
 <template>
   <main>
+    
+    <div class="background-image">
+        <img src="../assets/photos/fabrice-nijntje.jpeg" alt="fabrice in front of nijntje" />
+    </div>
     <div class="about-content">
       <h1>Over Fabrice Hund</h1>
 

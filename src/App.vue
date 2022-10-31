@@ -23,7 +23,7 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -32,6 +32,18 @@ export default {
   color: #2c3e50;
   letter-spacing: 0.1em;
   font-size: 12px;
+}
+.background-image{
+    position: fixed;
+    left: 0px;
+    opacity: 0.3;
+    top: 0;
+    
+    z-index: -10000;
+    img{
+        height: 20vw;
+        border-radius: 0px 0px 3000px 300px;
+    }
 }
 .logo-header{
   max-height: 64px;

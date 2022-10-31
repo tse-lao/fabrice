@@ -1,10 +1,10 @@
 import { createRouter, createWebHistory } from 'vue-router';
+import Expos from "../components/Expos.vue";
+import PublicityWork from "../components/PublicityWork.vue";
 import About from '../views/About.vue';
 import Main from '../views/Main.vue';
-import Projects from '../views/Projects.vue';
 import Publications from "../views/Publications.vue";
-
-
+import Selling from "../views/Selling.vue";
 
 const routes = [
   {
@@ -13,9 +13,9 @@ const routes = [
     component: Main
   }, 
   {
-    path: '/landschappen', 
-    name: 'Landschappen', 
-    component: Main
+    path: '/selling', 
+    name: 'selling', 
+    component: Selling
   }, 
   {
     path: '/about', 
@@ -23,24 +23,19 @@ const routes = [
     component: About
   },
   {
-    path: '/projecten', 
-    name: 'projecten', 
-    component: Projects
-  },
-  {
     path: '/publicaties', 
     name: 'publicaties', 
     component: Publications, 
     children: [
       {
-        path: 'timeline', 
-        name: 'timeline', 
-        component: Projects
+        path: 'expos', 
+        name: 'expos', 
+        component: Expos
       }, 
       {
         path: '', 
         name: 'Publicaties', 
-        component: About
+        component: PublicityWork
       }
     ]
   }
