@@ -1,17 +1,20 @@
 <template>
-  <div>
-    <div class="navigation">
-    navigation section
-  </div>
+<div class="main-template">
   <div class="content">
-    content
+    <Gallery />
   </div>
-  </div>
+</div>
 
 </template>
 
 <script>
+import Menu from '../components/Menu.vue'
+import Gallery  from '../components/Gallery.vue'
+
 export default {
+    components: {
+      Menu, Gallery
+    },
   name: 'HelloWorld',
   props: {
     msg: String
@@ -21,6 +24,10 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+
+.main-template{
+    display: flex;
+}
 h3 {
   margin: 40px 0 0;
 }
@@ -34,5 +41,10 @@ li {
 }
 a {
   color: #42b983;
+}
+.navigation{
+    flex: 1;
+    max-width: 300px;
+    
 }
 </style>
