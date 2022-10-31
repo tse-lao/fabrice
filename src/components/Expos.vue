@@ -31,17 +31,18 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="css">
 .publication{
     display: flex;
     align-items: center;
     justify-content: center;
     align-content: flex-start;
     margin: 1rem;
-    h4{
+}
+  .publication  h4{
         margin: 1rem;
         padding: 0;
     }
-}
+
 
 </style>

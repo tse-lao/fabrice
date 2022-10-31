@@ -21,7 +21,7 @@
         name: "PublicationsView"
     }
 </script>
-<style lang="scss">
+<style lang="css">
 .head-menu{
     display: flex;
     flex-direction: row;
@@ -30,21 +30,18 @@
     align-items:center;
     align-self: center;
     justify-content: center;
-    
-    .menu-item{
+}
+  .head-menu  .menu-item{
         padding: 1rem;
         border-radius: 6px;
         font-weight: 500;
         text-transform: uppercase;
-        
-        &:hover{
+  }
+        .head-menu .menu-item:hover{
             font-weight: 700;
             cursor: pointer;
             text-decoration: underline;
         }
-        
-    }
-}
 
 
 </style>

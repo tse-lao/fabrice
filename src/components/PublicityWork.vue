@@ -28,18 +28,19 @@ export default{
     
 }
 </script>
-<style lang="scss">
+<style>
 .publication{
     display: flex;
     align-items: center;
     justify-content: center;
     align-content: flex-start;
     margin: 1rem;
-    h4{
+}
+ .publication   h4{
         margin: 1rem;
         padding: 0;
     }
-}
+
 .background-image{
     position: fixed;
     left: 0px;
@@ -47,9 +48,10 @@ export default{
     top: 0;
     
     z-index: -10000;
-    img{
+}
+   .background-image img{
         height: 50vw;
         border-radius: 0px 0px 3000px 300px;
     }
-}
+
 </style>

@@ -28,7 +28,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="css">
 .selling{
     display: flex;
     justify-content: center;
@@ -41,10 +41,9 @@ export default {
     gap: 2rem;
     flex-direction: row;  
     margin: 2rem;
-    
-    span{
+}
+ .address-list   span{
         display: block;    
     }
-}
 
 </style>

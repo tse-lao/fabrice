@@ -14,7 +14,7 @@
       </div>
   </main>
 </template>
-<style lang="scss" scoped>
+<style scoped>
   .nav-bar{
     display: flex;
     flex-direction: row;
@@ -22,16 +22,14 @@
     justify-content: space-between;
     align-items: center;
     gap: 2rem;
-    
-    .logo{
+  }
+   .nav-bar .logo{
       margin-left: 3rem;
       margin-top: 1rem;
-      img{
+   }
+      .logo img{
         max-height: 48px;
       }
-    }
-  }
-
   
   .menu{
     display: flex;
@@ -42,11 +40,12 @@
     font-weight: 300;
     letter-spacing: 0.2em;
     text-transform: uppercase;
-    .menu-item:hover{
+  }
+ .menu   .menu-item:hover{
       cursor:pointer;
       color: rgba(240,100,100,0.5);
     }
-  }
+
 </style>
 
 <script lang="js">

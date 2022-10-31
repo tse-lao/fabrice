@@ -99,7 +99,7 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
+<style scoped>
 .gallery{
     margin: 32px;
     display: flex;
@@ -107,16 +107,18 @@ export default {
   align-content: flex-start;
   align-items: flex-start;
 }
-.side-menu{
+.side-menu
   .category{
     
     margin: 1rem;
-    span{
+    
+  }
+   .category span{
       text-transform: uppercase;
       font-weight: 600;
     }
     
-    ul li{
+  .category  ul li{
       list-style: none;
       text-align: left;
       padding-left: 5px;
@@ -124,14 +126,10 @@ export default {
       padding-top: 0.5rem;
       padding-bottom: 0.5rem;
       text-transform: uppercase;
-      
-        &:hover{
+  }
+        ul li:hover{
         color: green;
         cursor: pointer;
         border-left: 4px solid green;
       }
-    }
-    
-  }
-}
 </style>

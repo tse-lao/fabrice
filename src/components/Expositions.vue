@@ -8,5 +8,3 @@ export default{
     name: "ExpositionsVue", 
 }
 </script>
-<style lang="scss">
-</style>

@@ -109,7 +109,7 @@ export default {
     name: "AboutPage", 
 }
 </script>
-<style lang="scss">
+<style lang="css">
 .about-content {
   display: flex;
   max-width: 1200px;
@@ -133,25 +133,25 @@ export default {
   flex-direction: column;
   align-self: center;
   flex: 1;
-
-  img {
+}
+.image-with-text  img {
     max-width: 400px;
   }
 
-  span {
+ .image-with-text span {
     font-style: italic;
   }
-}
+
 .two-section {
   display: flex;
   gap: 4rem;
   max-width: 1000px;
   flex-wrap: wrap;
-
-  img {
+}
+ .two-section img {
     border-radius: 6px;
   }
-}
+
 section {
   max-width: 600px;
   text-align: justify;
