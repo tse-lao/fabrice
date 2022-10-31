@@ -21,32 +21,30 @@
             </ul>
         </div>
     </div>
-    <n-image-group>
-      <n-space  >
-      <div v-for="item in list" :key="item.name">
-      <n-image
-          width="200"
-          v-bind:src="item.url"
-          alt=item.name
-        />
-      </div>
+   
+    
+    <div class="gallery">
+      <GalleryElement galleryID="my-test-gallery"  :images="list" />
+    </div>
+
         
-      </n-space>
-    </n-image-group>
   </main>
 </template>
 
 
 <script lang="js">
+import GalleryElement from "../components/GalleryElement.vue";
 import json from '../router/landschappen.json';
+
 
 const list = [
     {
-        url: 'https://fabrice.nu/images/2011_steen11_objekt_3D-117.JPG',
-        name: "iets"
+        source: 'https://fabrice.nu/images/2011_steen11_objekt_3D-117.JPG',
+        thumbnail: 'https://fabrice.nu/images/2011_steen11_objekt_3D-117.JPG',
+        title: "iets"
     },
      {
-        url: "https://fabrice.nu/images/igallery/resized/1-100/1988_02_3D_object-91-100-100-80-c.jpg",
+        source: "https://fabrice.nu/images/igallery/resized/1-100/1988_02_3D_object-91-100-100-80-c.jpg",
         name: "anders"
     },
      {
@@ -61,10 +59,35 @@ const list = [
         url: "https://fabrice.nu/images/igallery/resized/201-300/2001_038_ker_3D-263-100-100-80-c.JPG",
         name: "sometdihing"
     },
+        {
+          largeURL:
+            'https://cdn.photoswipe.com/photoswipe-demo-images/photos/1/img-2500.jpg',
+          thumbnailURL:
+            'https://cdn.photoswipe.com/photoswipe-demo-images/photos/1/img-200.jpg',
+          width: 1875,
+          height: 2500,
+        },
+        {
+          largeURL:
+            'https://cdn.photoswipe.com/photoswipe-demo-images/photos/2/img-2500.jpg',
+          thumbnailURL:
+            'https://cdn.photoswipe.com/photoswipe-demo-images/photos/2/img-200.jpg',
+          width: 1669,
+          height: 2500,
+        },
+        {
+          largeURL:
+            'https://cdn.photoswipe.com/photoswipe-demo-images/photos/3/img-2500.jpg',
+          thumbnailURL:
+            'https://cdn.photoswipe.com/photoswipe-demo-images/photos/3/img-200.jpg',
+          width: 2500,
+          height: 1666,
+        },
     
 ]
 export default {
   name: "GalleryList", 
+  components:  {GalleryElement},
   data: () => ({
     list: json
   }),
@@ -81,8 +104,8 @@ export default {
     margin: 32px;
     display: flex;
     gap: 4rem;
-  align-content: center;
-  align-items: center;
+  align-content: flex-start;
+  align-items: flex-start;
 }
 .side-menu{
   .category{

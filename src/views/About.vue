@@ -146,6 +146,7 @@ export default {
   display: flex;
   gap: 4rem;
   max-width: 1000px;
+  flex-wrap: wrap;
 
   img {
     border-radius: 6px;
