@@ -8,12 +8,12 @@
 </template>
 
 <script>
-import Menu from '../components/Menu.vue'
-import Gallery  from '../components/Gallery.vue'
+
+import Gallery from '../components/Gallery.vue';
 
 export default {
     components: {
-      Menu, Gallery
+      Gallery
     },
   name: 'HelloWorld',
   props: {
