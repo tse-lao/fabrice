@@ -21,6 +21,7 @@
 <script>
 import json from '../data/timeline.json';
 export default {
+    name: "ExpoView", 
     data: () => {
         return{
             projects: json
